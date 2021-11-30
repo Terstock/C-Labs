@@ -16,7 +16,7 @@ public:
     void message() 
     {
     	
-        cout << "Источник с описанием всех самолётов: https://ru.wikipedia.org/wiki/Список_Самолётов_(А-Я) \n";
+        cout << "A source with description af all the raw materials: https://ru.wikipedia.org/wiki/Г‘ГЇГЁГ±Г®ГЄ_Г‘Г Г¬Г®Г«ВёГІГ®Гў_(ГЂ-Гџ) \n";
     }
     Plane(string model_p, int year_p, int power_p, int speed_p, int capacity_p ) 
     {
@@ -69,100 +69,100 @@ public:
 	//}
     void getParameter() 
     {
-        cout << "Введенные данные лет. средства для анализа: \n" <<
-		 "Модель:  " << model << "\n" <<
-		 "Год производства:  " << year << " год" << "\n" << 
-		 "Мощность:  " << power << " лошадиных сил" << "\n" <<
-		 "Скорость:  " << speed << " км/ч" << "\n" <<
-		 "Грузоподьемность:  " << capacity << " кг" << endl;
+        cout << "Input info of plane: \n" <<
+		 "Model:  " << model << "\n" <<
+		 "Year of production:  " << year << " ГЈГ®Г¤" << "\n" << 
+		 "Power:  " << power << " Г«Г®ГёГ Г¤ГЁГ­Г»Гµ Г±ГЁГ«" << "\n" <<
+		 "Speed:  " << speed << " ГЄГ¬/Г·" << "\n" <<
+		 "Capacity:  " << capacity << " ГЄГЈ" << endl;
 		 
 		cout << "         " << endl;
-		cout << "Выводы экспертизы:" << endl;
+		cout << "Conclusions:" << endl;
 		cout << "         " << endl;
 		if (year <= 2002)
 		{
-    		cout << "Самолёт считается старым и подлежит утилизации" << endl;
+    		cout << "Plane is too old and should be destroyed" << endl;
 
 		}
 		else
 		{
-    		cout << "Самолёт пригоден для использования" << endl;
+    		cout << "Plane is able to use" << endl;
     	}
     	if (power < 30000)
 		{
-    		cout << "Самолёт является гражданским" << endl;
+    		cout << "Plane is civil" << endl;
 
 		}
 		else
 		{
-    		cout << "Самолёт является военным" << endl;
+    		cout << "Plane is military" << endl;
     	}
     	if (speed <= 800)
 		{
-    		cout << "Самолёт является пассажирским или же самолетом иного вида" << endl;
+    		cout << "Plane is passenger or other" << endl;
 
 		}
 		else
 		{
-    		cout << "Самолёт является военным" << endl;
+    		cout << "Plane is military again" << endl;
     	}
     	if(speed > 1224){
-    		cout << "Самолёт является сверхзвуковым" << endl;
+    		cout << "Plane is supersonic" << endl;
 		}
 		if (capacity <= 9)
 		{
-    		cout << "Самолёт является пассажирским или еще более легким" << endl;
+    		cout << "Plane is passenger or other" << endl;
 		}
 		if (capacity >= 250){
-			cout << "Самолёт является сверхтяжелым транспортником" << endl;
+			cout << "Plane is very heavy transport plane" << endl;
 		}
 	}
-		//if (model == "мрия")
+		//if (model == "Г¬Г°ГЁГї")
 		//{
-    	//cout << "Модель: Ан-225" << endl;
-    	//cout << "Год производства: 1989 год" << endl;
-    	//cout << "Мощность: 12 500 л. с." << endl;
-    	//cout << "Скорость: 850 км/ч" << endl;
-    	//cout << "Грузоподьемность: 250 т." << endl;
+    	//cout << "ГЊГ®Г¤ГҐГ«Гј: ГЂГ­-225" << endl;
+    	//cout << "ГѓГ®Г¤ ГЇГ°Г®ГЁГ§ГўГ®Г¤Г±ГІГўГ : 1989 ГЈГ®Г¤" << endl;
+    	//cout << "ГЊГ®Г№Г­Г®Г±ГІГј: 12 500 Г«. Г±." << endl;
+    	//cout << "Г‘ГЄГ®Г°Г®Г±ГІГј: 850 ГЄГ¬/Г·" << endl;
+    	//cout << "ГѓГ°ГіГ§Г®ГЇГ®Г¤ГјГҐГ¬Г­Г®Г±ГІГј: 250 ГІ." << endl;
 		//} 	
     /*
     void Parameterchanger(string model_p, int year_p, int power_p, int speed_p, int capacity_p)
 	{
-    	model = "Рок";
+    	model = "ГђГ®ГЄ";
     	year = 1943;
     	power = 20000;
     	speed = 600;
     	capacity = 70;
     	cout << "         " << endl;
-    	cout << "Модель: " << model << endl;
-    	cout << "Год выпуска: " << year << " год" << endl;
-    	cout << "Мощность: " << power << " л.с." << endl;
-    	cout << "Скорость: " << speed << " км/ч" << endl;
-    	cout << "Грузоподьемность: " << capacity << " кг" << endl;
+    	cout << "ГЊГ®Г¤ГҐГ«Гј: " << model << endl;
+    	cout << "ГѓГ®Г¤ ГўГ»ГЇГіГ±ГЄГ : " << year << " ГЈГ®Г¤" << endl;
+    	cout << "ГЊГ®Г№Г­Г®Г±ГІГј: " << power << " Г«.Г±." << endl;
+    	cout << "Г‘ГЄГ®Г°Г®Г±ГІГј: " << speed << " ГЄГ¬/Г·" << endl;
+    	cout << "ГѓГ°ГіГ§Г®ГЇГ®Г¤ГјГҐГ¬Г­Г®Г±ГІГј: " << capacity << " ГЄГЈ" << endl;
     	cout << "         " << endl;
     
 	}
 };
 	*/
 	void Changemodel(string model_p){
-		model = "Рок";
-		cout << "Модель: " << model << endl;
+		model = "Rock";
+		cout << "Model: " << model << endl;
 	}
 	void Changeyear(int year_p){
 		year = 1943;
-		cout << "Год выпуска: " << year << " год" << endl;
+		cout << "Year of production: " << year << " ГЈГ®Г¤" << endl;
 	}
 	void Changepower(int power_p){
 		power = 20000;
-		cout << "Мощность: " << power << " л.с." << endl;
+		cout << "Power: " << power << " Г«.Г±." << endl;
 	}
 	void Changespeed(int speed_p){
 		speed = 600;
-		cout << "Скорость: " << speed << " км/ч" << endl;
+		cout << "Speed: " << speed << " ГЄГ¬/Г·" << endl;
 	}
 	void Changecapacity(int capacity_p){
 		capacity = 70;
-		cout << "Грузоподьемность: " << capacity << " кг" << endl;
+		cout << "Capacity: " << capacity << " ГЄГЈ" << endl;
 	}
 };
 
@@ -172,13 +172,13 @@ int main()
     setlocale(LC_ALL, "rus");
     string model;
     int year, power, speed, capacity;
-    cout << "Введите нужные вам параметры:\n";
+    cout << "Enter tour parameters:\n";
     cout << "         " << endl;
-    cout << "Модель: ";     cin >> model;
-    cout << "Год выпуска: ";    cin >> year;
-    cout << "Мощность: ";  cin >> power;
-    cout << "Скорость: ";  cin >> speed;
-    cout << "Грузоподьемность: ";  cin >> capacity;
+    cout << "Model: ";     cin >> model;
+    cout << "Year of production: ";    cin >> year;
+    cout << "Power: ";  cin >> power;
+    cout << "Speed: ";  cin >> speed;
+    cout << "Capacity: ";  cin >> capacity;
     //Plane objPlane ("as", 1991, 10000, 1200, 100);
     Plane objPlane;
     
@@ -193,7 +193,7 @@ int main()
     
    
     cout << "         " << endl;
-    model = "Гладиатор";
+    model = "Gladiator";
     year = 1941;
     power = 12000;
     speed = 500;
@@ -202,13 +202,13 @@ int main()
 
     
     cout << "         " << endl;
-    cout << "Модель: " << model << endl;
-    cout << "Год выпуска: " << year << " год" << endl;
-    cout << "Мощность: " << power << " л.с." << endl;
-    cout << "Скорость: " << speed << " км/ч" << endl;
-    cout << "Грузоподьемность: " << capacity << " кг" << endl;
+    cout << "Model: " << model << endl;
+    cout << "Year of production: " << year << " ГЈГ®Г¤" << endl;
+    cout << "Power: " << power << " Г«.Г±." << endl;
+    cout << "Speed: " << speed << " ГЄГ¬/Г·" << endl;
+    cout << "Capacity: " << capacity << " ГЄГЈ" << endl;
     cout << "         " << endl;
-    cout << "Замена переменных..." << endl;
+    cout << "Changing variables..." << endl;
     cout << "         " << endl;
     
     //objPlane.Parameterchanger(model, year, power, speed, capacity);
